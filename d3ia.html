@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>D3 Chapter 1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="someDiv" style="width:500px;height:20px;border:black 1px solid;margin-bottom: 5px;">
+        <input type="checkbox" id="someCheckbox">
+    </div>
+    <div id="borderdiv"></div>
+    <div id="infovizDiv">
+        <svg style="width:500px;height:500px;border:1px lightgray solid;">
+            <path d="M 10,60 40,30 50,50 60,30 70,80" style="fill:black;stroke:gray;stroke-width:4px;" />
+            <polygon style="fill:gray;" points="80,400 120,400 160,440 120,480 60,460" />
+            <g>
+                <line x1="200" y1="100" x2="450" y2="225" style="stroke:black;stroke-width:2px;" />
+                <circle cy="100" cx="200" r="30" />
+                <rect x="410" y="200" />
+            </g>
+            <g>
+                <circle r="2" />
+                <text>This circle's Label</text>
+            </g>
+            <g transform="translate(100,50)">
+                <circle r="2" />
+                <text>This circle's Label</text>
+            </g>
+            <g transform="translate(100,400) scale(2.5)">
+                <circle r="2" />
+                <text>This circle's Label</text>
+            </g>
+        </svg>
+    </div>
+</body>
+
+</html>
